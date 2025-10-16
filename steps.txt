@@ -1,0 +1,17 @@
+Steps to create this project
+
+1. create models as everything is dependent on it (Create a models folder inside it create the first models file)
+2. create schemas for validation of the content we recieve from user (Create a schemas folder and create all the schemas for validation)
+3. create a database connection not like express but like nextjs (if the connection is already there then well and good if not then create  )
+4. create a folder lib inside this folder create dbConnect.ts file to write code of db connection(This is because of shadcn ---optimizes code) this lib folder is for shadcn as it will create later so we have created it before hand by adding somemore files which increases optimization
+5. create a file in lib folder name resend.ts and import it in helpers folder 
+Used Resend.com for emails create a helpers folder in src and inside it create a sendVerificationEmail.ts to verify the emails 
+
+6. create a emails folder outside the src so it can be public and you can add other email templates if you want and create a VerificationEmail.tsx can use the code from reactEmail docs
+8. create a folder name types inside the src to make sure the type of response the api should send (standard response)
+
+9. now import the resend , VerificationEmail template and api response from the respective folders and define the how the response should look like and what should it include and from where the email should come and be delivered
+
+10. create api folder under app and sign-up folder under api and create a route.ts file inside the sign-up folder (this is our first route and this will be used to register the user)
+
+11. 
