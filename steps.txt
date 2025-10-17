@@ -14,4 +14,4 @@ Used Resend.com for emails create a helpers folder in src and inside it create a
 
 10. create api folder under app and sign-up folder under api and create a route.ts file inside the sign-up folder (this is our first route and this will be used to register the user)
 
-11. 
+11. now create a auth folder inside the api folder for the authentication and inside the auth folder create a folder named [...nextauth] for authentication using the next auth inside it create 2 files one is option.ts to write all the authentication code and route.ts for routing
