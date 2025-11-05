@@ -8,15 +8,7 @@ const UsernameRequestSchema = z.object({
     username: usernameValidation
 })
 
-export async function Get(request: Request){
-
-    // if(request.method !== "GET"){
-    //     return Response.json({
-    //         success: false,
-    //         message: "Method not allowed use only GET method"
-    //     },{status: 405})
-
-    // }.  no need to write this it is done automatically by next js api route handling system
+export async function GET(request: Request){
 
     await dbConnect();
     try {
